@@ -40,7 +40,7 @@ equal_size_files <- function(
     B_size
   )
 
-  message("Preparing output table...")
+  message("Preparing equality table...")
     
   redlist <- reslist[lapply(reslist, length) > 0]
   
@@ -49,8 +49,8 @@ equal_size_files <- function(
     dir_B = unname(redlist)
   )
   
-  tab_long <- tidyr::unnest(tab)
+  equality_table <- tidyr::unnest(tab)
 
-  return(tab_long)
+  return(equality_table)
   
 }
