@@ -13,10 +13,11 @@ equality_table <- equal_size_files(
   recursive = TRUE
 )
 
-jpeg_equality_table <- check_jpeg_equality(equality_table)
+jpeg_equality_table <- only_jpeg(equality_table)
 
-jpeg_equality_table_checked <- jpeg_equality_table[jpeg_equality_table$pixel_equal,]
-
-hide_doubles(jpeg_equality_table_checked, dir_A)
+move_doubles_jpeg(
+  jpeg_equality_table,
+  "/home/clemens/Desktop/test/test1"
+)
 
 # remove empty directories

@@ -1,33 +1,33 @@
 #' equal_size_files
 #'
-#' @param dir_A test
-#' @param dir_B test
+#' @param dir_with_doubles test
+#' @param dir_reference test
 #' @param ... test
 #'
 #' @export
 equal_size_files <- function(
-  dir_A, 
-  dir_B,
+  dir_with_doubles, 
+  dir_reference,
   ...
 ) {
   
-  message("Listing files in ", dir_A, " ...")
+  message("Listing files in ", dir_with_doubles, " ...")
   
-  A_files <- list.files(dir_A, ...)
+  A_files <- list.files(dir_with_doubles, ...)
   
-  message(dir_A, ": ", length(A_files), " files")
-  message("Listing files in ", dir_B, " ...")
+  message(dir_with_doubles, ": ", length(A_files), " files")
+  message("Listing files in ", dir_reference, " ...")
   
-  B_files <- list.files(dir_B,  ...)
+  B_files <- list.files(dir_reference,  ...)
   
-  message(dir_B, ": ", length(B_files), " files")
+  message(dir_reference, ": ", length(B_files), " files")
   
   message("Calculating size of all files...")
   
   A_size <- sapply(A_files, file.size)
   B_size <- sapply(B_files, file.size)
   
-  message("Comparing files sizes between ", dir_A, " and ", dir_B, " ...")
+  message("Comparing files sizes between ", dir_with_doubles, " and ", dir_reference, " ...")
   
   reslist <- lapply(
     A_size, 
@@ -45,8 +45,8 @@ equal_size_files <- function(
   redlist <- reslist[lapply(reslist, length) > 0]
   
   tab <- tibble::tibble(
-    dir_A = names(redlist),
-    dir_B = unname(redlist)
+    dir_with_doubles = names(redlist),
+    dir_reference = unname(redlist)
   )
   
   equality_table <- tidyr::unnest(tab)

@@ -4,12 +4,12 @@
 \alias{equal_size_files}
 \title{equal_size_files}
 \usage{
-equal_size_files(dir_A, dir_B, ...)
+equal_size_files(dir_with_doubles, dir_reference, ...)
 }
 \arguments{
-\item{dir_A}{test}
+\item{dir_with_doubles}{test}
 
-\item{dir_B}{test}
+\item{dir_reference}{test}
 
 \item{...}{test}
 }
