@@ -17,7 +17,7 @@ check_jpeg_equality <- function(
       grepl("^(.*)+(\\.jpg|\\.jpeg)$", dir_B, ignore.case = TRUE)
   )
   
-  message("Compare individual files by pixel values...")
+  message("Comparing individual files by pixel values...")
   
   pb <- txtProgressBar(
     min = 0,
@@ -38,7 +38,7 @@ check_jpeg_equality <- function(
   
   close(pb)
   
-  message("Add result of equality test to equality table...")
+  message("Adding result of equality test to equality table...")
   
   jpeg_equality_table$pixel_equal <- equal
   

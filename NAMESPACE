@@ -2,3 +2,4 @@
 
 export(check_jpeg_equality)
 export(equal_size_files)
+export(hide_doubles)

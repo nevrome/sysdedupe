@@ -15,5 +15,8 @@ equality_table <- equal_size_files(
 
 jpeg_equality_table <- check_jpeg_equality(equality_table)
 
+jpeg_equality_table_checked <- jpeg_equality_table[jpeg_equality_table$pixel_equal,]
+
+hide_doubles(jpeg_equality_table_checked, dir_A)
 
 
