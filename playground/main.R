@@ -1,12 +1,12 @@
 # dir_A = ("G:\\2007-03-27"),
 # dir_B = ("F:\\Dropbox\\Bilder_sortiert"),
 
-dir_A <- ("/home/clemens/Desktop/test/test1/A")
-dir_B <- ("/home/clemens/Desktop/test/test1/B")
+dir_with_doubles <- ("/home/clemens/Desktop/test/test1/A")
+dir_reference <- ("/home/clemens/Desktop/test/test1/B")
 
 equality_table <- equal_size_files(
-  dir_A,
-  dir_B,
+  dir_with_doubles,
+  dir_reference,
   pattern = NULL,
   ignore.case = TRUE,
   full.names = TRUE,
@@ -20,4 +20,4 @@ move_doubles_jpeg(
   "/home/clemens/Desktop/test/test1"
 )
 
-# remove empty directories
+remove_empty_directories(dir_with_doubles)

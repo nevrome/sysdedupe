@@ -3,3 +3,4 @@
 export(equal_size_files)
 export(move_doubles_jpeg)
 export(only_jpeg)
+export(remove_empty_directories)

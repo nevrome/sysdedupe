@@ -13,7 +13,7 @@ move_doubles_jpeg <- function(
 
   dir_new <- file.path(dir_doubles_backup, paste0("doubles_", random_string_generator(1)))
   
-  message("Creating doubles directory here:", dir_new)
+  message("Creating doubles directory here: ", dir_new)
   
   dir.create(dir_new, recursive = T)
   
