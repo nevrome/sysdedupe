@@ -7,9 +7,9 @@
 check_jpeg_equality(equality_table, pixels = seq(1, 2001, 10))
 }
 \arguments{
-\item{equality_table}{}
+\item{equality_table}{test}
 
-\item{pixels}{}
+\item{pixels}{test}
 }
 \description{
 check_jpeg_equality

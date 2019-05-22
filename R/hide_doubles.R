@@ -1,13 +1,14 @@
 #' hide_doubles
 #'
-#' @param equality_table 
+#' @param equality_table test
+#' @param dir_A test
 #'
 #' @export
 hide_doubles <- function(equality_table, dir_A) {
 
   message("Preparing moving operation...")
           
-  source_files <- unique(equality_table$dir_A)
+  source_files <- unique(equality_table[["dir_A"]])
   dir_new <- file.path(dir_A, paste0("doubles_", random_string_generator(1)))
   new_source_dirs <- dirname(file.path(
     dir_new,

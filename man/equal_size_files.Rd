@@ -7,11 +7,11 @@
 equal_size_files(dir_A, dir_B, ...)
 }
 \arguments{
-\item{dir_A}{}
+\item{dir_A}{test}
 
-\item{dir_B}{}
+\item{dir_B}{test}
 
-\item{...}{}
+\item{...}{test}
 }
 \description{
 equal_size_files

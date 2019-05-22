@@ -7,7 +7,9 @@
 hide_doubles(equality_table, dir_A)
 }
 \arguments{
-\item{equality_table}{}
+\item{equality_table}{test}
+
+\item{dir_A}{test}
 }
 \description{
 hide_doubles

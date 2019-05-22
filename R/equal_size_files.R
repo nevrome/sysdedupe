@@ -1,8 +1,8 @@
 #' equal_size_files
 #'
-#' @param dir_A 
-#' @param dir_B 
-#' @param ... 
+#' @param dir_A test
+#' @param dir_B test
+#' @param ... test
 #'
 #' @export
 equal_size_files <- function(

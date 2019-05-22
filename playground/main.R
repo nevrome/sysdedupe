@@ -19,4 +19,4 @@ jpeg_equality_table_checked <- jpeg_equality_table[jpeg_equality_table$pixel_equ
 
 hide_doubles(jpeg_equality_table_checked, dir_A)
 
-
+# remove empty directories
