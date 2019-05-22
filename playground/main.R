@@ -19,5 +19,3 @@ move_doubles_jpeg(
   jpeg_equality_table,
   "/home/clemens/Desktop/test/test1"
 )
-
-remove_empty_directories(dir_with_doubles)
